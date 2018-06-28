@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  symfony:
+    build:
+      context: ../
+    volumes:
+      - ../:/var/www/symfony
+    depends_on:
+      - mysql
+      
+  nginx:
+    build: 
+      context: .
+      dockerfile: nginx.Dockerfile
+    ports:
+      - '80:80'
+    volumes:
+      - ../:/var/www/symfony
+    depends_on:
+      - symfony
+
+  mysql:
+    image: mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - ./.data/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: symfony
+      MYSQL_USER: root 
+      MYSQL_ROOT_PASSWORD: pass
+  
