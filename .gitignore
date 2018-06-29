@@ -9,3 +9,4 @@
 ### Docker environment
 /docker/.data/
 /docker/docker-compose.yml
+/docker/nginx.conf
