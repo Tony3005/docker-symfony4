@@ -8,3 +8,5 @@ WORKDIR /var/www/symfony
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN composer install
+
+RUN apk update && apk add yarn && yarn install
