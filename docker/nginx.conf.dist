@@ -1,6 +1,11 @@
 server {
+    listen 80;
+    listen 443 ssl;
     server_name symfony4.local;
     root /var/www/symfony/public;
+
+    ssl_certificate /etc/ssl/nginx.crt;
+    ssl_certificate_key /etc/ssl/nginx.key;
 
     location / {
         # try to serve file directly, fallback to index.php
