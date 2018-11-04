@@ -9,11 +9,10 @@
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.1",
         "symfony/lts": "^4@dev",
-        "symfony/yaml": "^4.1"
-    },
-    "require-dev": {
+        "symfony/yaml": "^4.1",
         "symfony/dotenv": "^4.1"
     },
+    "require-dev": {},
     "config": {
         "preferred-install": {
             "*": "dist"
