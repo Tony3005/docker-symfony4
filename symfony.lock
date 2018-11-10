@@ -29,6 +29,15 @@
     "symfony/debug": {
         "version": "v4.1.0"
     },
+    "symfony/debug-bundle": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "f8863cbad2f2e58c4b65fa1eac892ab189971bea"
+        }
+    },
     "symfony/dependency-injection": {
         "version": "v4.1.0"
     },
@@ -71,6 +80,9 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.8.0"
     },
+    "symfony/polyfill-php72": {
+        "version": "v1.10.0"
+    },
     "symfony/routing": {
         "version": "4.0",
         "recipe": {
@@ -80,7 +92,16 @@
             "ref": "cda8b550123383d25827705d05a42acf6819fe4e"
         }
     },
+    "symfony/twig-bridge": {
+        "version": "v4.1.7"
+    },
+    "symfony/var-dumper": {
+        "version": "v4.1.7"
+    },
     "symfony/yaml": {
         "version": "v4.1.0"
+    },
+    "twig/twig": {
+        "version": "v2.5.0"
     }
 }
